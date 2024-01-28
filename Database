@@ -1,0 +1,16 @@
+CREATE DATABASE DeviceSS;
+use DeviceSS;
+
+CREATE TABLE tblDevice (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(500),
+    type VARCHAR(50)
+);
+
+INSERT INTO tblDevice (name, description, type) VALUES
+    ('Device1', 'Description for Device 1', 'TypeA'),
+    ('Device2', 'Description for Device 2', 'TypeB'),
+    ('Device3', 'Description for Device 3', 'TypeC');
+    
+select * from tblDevice
